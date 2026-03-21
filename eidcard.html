@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Eid Mubarak Card</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    font-family:Arial, sans-serif;
+}
+
+.card{
+    width:350px;
+    height:450px;
+    background:#ffffff;
+    border-radius:20px;
+    text-align:center;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.moon{
+    width:120px;
+    height:120px;
+    background:gold;
+    border-radius:50%;
+    margin:20px auto;
+    position:relative;
+}
+
+.moon::after{
+    content:"";
+    width:100px;
+    height:100px;
+    background:white;
+    border-radius:50%;
+    position:absolute;
+    top:-10px;
+    left:20px;
+}
+
+h1{
+    color:#0f2027;
+    margin-top:20px;
+}
+
+p{
+    color:#555;
+    font-size:18px;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:#2c5364;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#203a43;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <div class="moon"></div>
+    <h1>Eid Mubarak</h1>
+    <p>May Allah fill your life with happiness, peace, and prosperity.</p>
+    <button onclick="alert('Eid Mubarak! 🌙')">Send Wishes</button>
+</div>
+
+</body>
+</html>
