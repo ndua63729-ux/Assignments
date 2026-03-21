@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jadoo Travel</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+    }
+
+    nav a {
+      margin-left: 60px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: orange;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .hero img {
+      width: 400px;
+      height: auto;
+    }
+
+    /* Services */
+    .services {
+      text-align: center;
+      padding: 60px;
+    }
+
+    .service-box {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+
+    .service {
+      width: 200px;
+    }
+
+    /* Destinations */
+    .destinations {
+      padding: 60px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .card {
+      width: 220px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      
+    }
+
+    .card p {
+      padding: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background: #f5f5f5;
+      padding: 30px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .service-box,
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service,
+      .card {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h2>Jadoo</h2>
+    <nav>
+      <a href="#">Destinations</a>
+      <a href="#">Hotels</a>
+      <a href="#">Flights</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Travel, enjoy and live a new and full life</h1>
+      <p>Build memories around the world with us.</p>
+      <button class="btn">Find out more</button>
+    </div>
+    <img src="./side imag jpg.jpg" alt="Traveller">
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>We Offer Best Services</h2>
+    <div class="service-box">
+      <div class="service">
+        <h4>Weather</h4>
+        <p>Calculated weather info</p>
+      </div>
+      <div class="service">
+        <h4>Best Flights</h4>
+        <p>Find best flight deals</p>
+      </div>
+      <div class="service">
+        <h4>Local Events</h4>
+        <p>Discover nearby events</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section class="destinations">
+    <h2>Top Destinations</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="./teacher.jfif" />
+        <p>Rome, Italy</p>
+      </div>
+      <div class="card">
+        <img src="./WhatsApp Image 2025-10-23 at 8.22.12 AM.jpeg" />
+        <p>London, UK</p>
+      </div>
+      <div class="card">
+        <img src="./formal suit.webp" />
+        <p>Europe</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Jadoo. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
